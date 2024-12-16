@@ -1,0 +1,19 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+    <style>
+        header {
+            background-image: url('your-banner-image.jpg.jpg'); /* Replace with your image path */
+            background-size: contain; /* Ensures the entire image is visible */
+            background-position: center center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            height: 400px; /* Set the height of the banner */
+            width: 100%; /* Full width of the page */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Optional: If you want content to be centered vertically */
+        }
+        
+    </style>
+</head>
