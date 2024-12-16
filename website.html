@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #ff66b2; /* Pink */
+            color: white;
+            text-align: center;
+            padding: 15px; /* Reduced padding */
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 28px; /* Reduced font size */
+            margin: 0;
+        }
+
+        /* Navigation links styling */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px; /* Adjusted font size */
+        }
+
+        nav a:hover {
+            color: #ffccff; /* Light Pink */
+        }
+
+        /* Full-screen banner image styling */
+        .banner {
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            object-fit: cover; /* Ensures the image covers the entire area */
+        }
+
+        /* Section styling */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Welcome text styling */
+        section p.welcome {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff66b2; /* Pink */
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Full-screen banner image styling */
+        #home .banner-container {
+        width: 100%;
+        height: 400px; /* Set the height of the banner */
+        overflow: hidden; /* Prevents overflow of content */
+        }
+
+        #home .banner {
+        width: 100%;
+        height: 100%; /* Ensures the image covers the full height */
+        object-fit: cover; /* Ensures the image covers the entire area */
+        object-position: center; /* Centers the image */
+        }
+
+        /* Background color for the home section */
+        #home {
+            background-color: rgba(230, 204, 255, 0.9); /* Light Blue with transparency for readability */
+            padding-top: 100px; /* To avoid overlap with the fixed header */
+        }
+
+        /* Additional section styling */
+        section#resume, section#myself, section#family, section#favorites {
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding-top: 40px; /* Ensures text is not hidden behind the header */
+        }
+
+        section#resume {
+            background-color: #b3e0ff; /* Light Blue */
+        }
+
+        section#myself {
+            background-color: #ffccf2; /* Light Pink */
+        }
+
+        section#family {
+            background-color: #e6ccff; /* Light Blue */
+        }
+
+        section#favorites {
+            background-color: #ffb3cc; /* Light Pink */
+        }
+
+        /* Scroll behavior and smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+            }
+        /* Photo Album Styling */
+        .photo-album {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minimum size for larger images */
+            gap: 20px; /* Increase gap for spacing */
+            margin-top: 30px;
+        }
+
+        .photo {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo img {
+            width: 100%; /* Full width of the container */
+            height: 250px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures the image scales properly */
+            border-radius: 10px; /* Rounded corners for images */
+            margin-bottom: 10px;
+        }
+
+        .photo p {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#resume">My Resume</a>
+            <a href="#myself">Myself</a>
+            <a href="#family">My Family</a>
+            <a href="#favorites">My Favorites</a>
+        </nav>
+    </header>
+
+    <!-- Home Section with Full-Page Banner Image -->
+    <section id="home">
+        <img src="your-banner-image.jpg.jpg" alt="Banner Image" class="banner">
+        
+        <p class="welcome">Hello! I'm Jazelle Chloe C. Guillermo, <br> a first-year Computer Science student at Cavite State University - Imus Campus.</p>
+
+        <p>I’m passionate about technology and constantly eager to learn new things. This website is where I share more about myself, my experiences, and the things that inspire me.<br>
+        As a Computer Science student, I’m excited to continue growing and expanding my knowledge. This site is one way for me to document my journey and share it with you. I’m looking forward to where my studies and passions will take me.<br>
+        Feel free to explore the various sections of my site, including my resume, my story, my family, and my favorite things.<br>
+        Thank you for visiting, and I hope you enjoy your time here and get to know me better!</p>
+       
+    </section>
+
+    <!-- Resume Section -->
+   <section id="resume">
+    <h1>My Resume</h1>
+    <p>My resume contains essential information about my professional journey, including my personal details, work objectives, educational background, academic achievements, skills, and involvement in extracurricular activities and organizations. I plan to update it regularly to reflect my ongoing growth and accomplishments.</p>
+    <iframe src="Resume_Guillermo(PDF).pdf" width="100%" height="600px" style="border:none;"></iframe>
+    </section>
+
+
+    <!-- About Myself Section -->
+<section id="myself">
+    <h1>Myself/About Me</h1>
+    <p>Hi there! I'm Jazelle Chloe C. Guillermo, a 19-year-old first-year Computer Science student at Cavite State University - Imus Campus. I was born on November 19, 2005, making me a proud Scorpio! While I'm an introvert, I feel comfortable and playful when I'm with my friends and family. <br> 
+        I chose to pursue Computer Science because I was inspired by my dad, who is a Network Engineer/IT professional. His dedication to his work sparked my interest in technology. Another turning point for me was receiving the Best in Computer System Servicing and Best in Science awards during my Grade 10 moving-up ceremony. I took it as a sign that this path was meant for me. <br> 
+
+        Beyond academics, I am a creative and curious individual who loves exploring astronomy, especially the moon, which fascinates me. I enjoy music, movies, and reading, as they allow me to escape and expand my imagination. My hobbies include crocheting and playing the ukulele, which let me express my creativity. <br> 
+
+        I also enjoy staying active with sports like basketball, biking, and fishing. In addition, I'm a huge fan of K-pop and P-pop, with my favorite groups being ENHYPEN, SEVENTEEN, BINI, and IZNA. Their music has become my safe and comforting space, inspiring me daily. <br> 
+
+        Through this website, I hope to share my journey, including my aspirations, achievements, and the little things that make life meaningful to me. Thank you for taking the time to get to know me better!<br>
+        Here are some photos that highlight my life so far, capturing the moments & memories that make me who I am.</p>
+
+    <!-- Picture Albums -->
+    <h2>Picture Albums</h2>
+    <div class="photo-album">
+        <div class="photo">
+            <img src="image0.jpg" alt="Photo 0">
+            <p>These photos were taken during the first visit of my favorite group, ENHYPEN, to the Philippines on February 4, 2023, at MOA Manila during their 'Manifesto' tour. Sadly, my friends and I didn’t attend the concert because we didn’t have tickets, so we just roamed around MOA searching for freebies. We were called 'Team Labas.'</p>
+        </div>
+        <div class="photo">
+            <img src="image1.jpg" alt="Photo 1">
+            <p>These photos were taken during my JHS Moving-Up Ceremony on July 13, 2022, where I received the awards for With High Honors, Best in Computer System Servicing, and Best in Science.</p>
+        </div>
+        <div class="photo">
+            <img src="image2.jpg" alt="Photo 2">
+            <p>These photos were taken during my 18th birthday on November 19, 2023, when I celebrated my debut with my friends and family. It was my most favorite night.</p>
+        </div>
+        <div class="photo">
+            <img src="image3.jpg" alt="Photo 3">
+            <p>These photos were taken during my SHS graduation on May 31, 2024, where I received the award for With High Honors, marking the end of my high school days.</p>
+        </div>
+        <div class="photo">
+            <img src="image4.jpg" alt="Photo 4">
+            <p>These photos were taken during a trip to Tokyo, Japan, from August 2-7, 2024, when my mother and I, along with my mother's brother's family, visited Tokyo Disneyland, Senso-ji Temple, Mt. Fuji, Hanabiyori, Tokyo Skytree, TeamLab Planets, Tokyo Tower, and Shibuya Crossing.</p>
+        </div>
+        <div class="photo">
+            <img src="image5.jpg" alt="Photo 5">
+            <p>These photos were taken recently during the ENHYPEN Dunkin' Funmeet on December 6, 2024, at the Araneta Coliseum. This was my first time seeing my favorite group, ENHYPEN. My friend Dein and I paid for General Admission seats, and it was so worth it, even though they were far away.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Family Section -->
+    <section id="family">
+        <h1>My Family</h1>
+         <img src="your-banner-image.jpg" alt="Family photo" style="width:100%; max-width:900px; margin-bottom:20px;">
+        <p>My family consists of four members. <br> My father, Epie Rey Guillermo, is a hardworking Network Engineer/IT professional who has always been dedicated to providing for us. <br> My mother, Josie Guillermo, is a loving housewife who stayed home to care for me and my brother, showing selflessness and devotion. <br> I am Jazelle Chloe Guillermo, the eldest, and my younger brother, Manuel Jeoffrey Guillermo, is a Grade 10 student with a three-year age gap between us. <br> We live in Bacoor, Cavite, and are a Born-Again Christian family. My parents, who met and became a couple through their shared faith, have raised me and my brother with the same values. Since I was born, attending church at 'Victory' every Sunday has been a cornerstone of our lives, shaping who we are today.</p>
+    </section>
+
+    <!-- My Favorites Section -->
+<section id="favorites">
+    <h1>My Favorites</h1>
+    <p>Here are some things that I really enjoy and that bring me happiness:</p>
+    
+    <h2>Hobbies</h2>
+    <p>In my free time, I enjoy staying active and creative. I love playing basketball, riding my bike, crocheting, and playing the ukulele. These hobbies help me relax and have fun, and they’re great ways to express myself!</p>
+
+    <!-- Insert Sports Festival Video -->
+    <h3>Sports Festival - Women's Basketball</h3>
+   <p>During the 21st Founding Anniversary and Sports Festival of Cavite State University - Imus Campus, I actively participated in the Women's Basketball 5x5 division. It was an exciting event, and I’m proud to share that my team won the bronze medal! It was such a memorable experience to be part of this event, and I had so much fun representing our program Computer Science!</p>
+    <img src="your-banner.jpg" alt="Game photo" style="width:100%; max-width:900px; margin-bottom:20px;">
+
+    <video width="100%" controls>
+        <source src="path-to-your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Music</h2>
+    <p>I’m a huge fan of K-pop and P-pop! I love how energetic and creative the music and performances are. Some of my favorite groups are ENHYPEN, SEVENTEEN, BINI, and IZNA. <br>I recently saw ENHYPEN during their Funmeet at Dunkin' in Araneta Coliseum, and it was my first time seeing them.</p>
+
+    <video width="100%" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Movies</h2>
+    <p>I love watching movies, especially romance, fantasy, science fiction, thriller, horror, and comedy. Each genre gives me a different experience.</p>
+
+    <h2>Books</h2>
+    <p>When it comes to books, I enjoy reading about science, as well as science fiction, thrillers, and investigative stories. These books spark my imagination and help me see the world in new ways.</p>
+
+    <h2>Astronomy</h2>
+    <p>Astronomy is something I’m really passionate about. I love looking at the moon, stars and learning about the universe. It’s amazing to think about how vast and mysterious space is!</p>
+</section>
+
+</body>
+</html>
